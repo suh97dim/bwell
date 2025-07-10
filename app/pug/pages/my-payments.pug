@@ -1,0 +1,85 @@
+extends /layout/page
+
+block title
+    title Мои выплаты
+
+block variables
+    - var page = 'my-payments'
+block content
+    .container
+        .row
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li(aria-current="page").breadcrumb-item.active Мои выплаты
+        .row.wrapper
+            .col-12
+                h2 Мои выплаты
+                .row 
+                    .col-12.mt-20
+                        .table-wrapper
+                            table#my-payments
+                                thead 
+                                    tr
+                                        th Дата
+                                        th Направление
+                                        th Баллы
+                                        th Дата выплаты
+                                        th Статус
+                                tbody 
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 100
+                                        td --.--.---
+                                        td 
+                                            .status.status_wait Ожидает подтверждения
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 100
+                                        td --.--.---
+                                        td 
+                                            .status.status_success Выплачено
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 1200
+                                        td --.--.---
+                                        td 
+                                            .status.status_wait Ожидает подтверждения
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 100
+                                        td 14.12.2025
+                                        td 
+                                            .status.status_wait Ожидает подтверждения
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 100
+                                        td --.--.---
+                                        td 
+                                            .status.status_wait Ожидает подтверждения
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 100
+                                        td --.--.---
+                                        td 
+                                            .status.status_wait Ожидает подтверждения
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 100
+                                        td --.--.---
+                                        td 
+                                            .status.status_wait Ожидает подтверждения
+                                    tr
+                                        td 14.12.2025
+                                        td Телефон +7 (999) 999-99-99
+                                        td 100
+                                        td --.--.---
+                                        td 
+                                            .status.status_wait Ожидает подтверждения

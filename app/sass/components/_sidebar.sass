@@ -1,0 +1,221 @@
+.sidebar
+    position: fixed
+    top: 0
+    left: 0
+    min-height: 100dvh
+    max-height: 100dvh
+    max-width: 320px
+    min-width: 320px
+    z-index: 12
+    transition: 0.4s ease-out
+    display: flex
+    flex-direction: column
+    overflow: auto
+    padding: 35px 35px 35px 35px
+    justify-content: space-between
+
+.sidebar-right
+    position: fixed
+    top: 200px
+    right: 20px
+    min-height: calc(100dvh - 200px)
+    max-height: calc(100dvh - 200px)
+    max-width: 300px
+    min-width: 300px
+    z-index: 12
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    background-color: #fff
+    padding: 20px 15px
+    gap: 40px
+    overflow: auto
+    box-shadow: 0px 15px 40px 5px #EDEDED
+
+.sidebar-right__block
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.sidebar-right__news-wrapper
+    display: flex
+    flex-direction: column
+    gap: 15px
+
+.sidebar-right__new
+    border-radius: 10px
+    background-color: #FBF9F9
+    padding: 15px
+    display: flex
+    flex-direction: column
+    gap: 5px
+
+.sidebar-right__new-footer
+    display: flex
+    width: 100%
+    justify-content: space-between
+
+.sidebar-right__new-footer-link,
+.sidebar-right__new-footer-date
+    color: #524E9C
+    font-family: "TT Norms Pro"
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 16px
+
+.sidebar-right__new-footer-link
+    text-decoration: underline
+    text-decoration-style: solid
+
+.sidebar__nav, .header__nav
+    display: flex
+    flex-direction: column
+    row-gap: 15px
+    padding: 0
+
+.sidebar__nav > li a.active-point,  .header__nav > li a.active-point
+    background-color: $red
+    color: $white
+
+.sidebar__nav > li a , .header__nav > li a
+    color: yellow
+    font-size: 18px
+    font-style: normal
+    font-weight: 600
+    padding: 0 15px
+    height: 60px
+    color: #647A84
+    line-height: normal
+    display: flex
+    align-items: center
+    column-gap: 30px
+    border-radius: 10px
+    white-space: nowrap
+
+.sidebar__nav > li a.active-point svg path , .header__nav > li a.active-point svg path
+    fill: $white
+
+.sidebar__nav > li a, .header__nav > li a
+    &:hover
+        // background-color: #e5005c23
+        // border: 1px solid red
+        box-shadow: 0px 15px 40px 5px #EDEDED
+.sidebar__top
+    display: flex
+    flex-direction: column
+    gap: 40px
+
+.sidebar__bottom
+    width: 100%
+    padding: 30px 30px 130px 30px
+    border-radius: 10px
+    background-color: #524E9C
+    background-image: url(../img/bg/sidebar__bottom.svg)
+    background-position: center bottom
+    background-size: 100%
+    background-repeat: no-repeat
+
+.sidedar__logo
+    width: 140px
+    display: flex
+    flex-shrink: 0
+    max-width: fit-content
+
+.sidebar-right__nav, .header-bottom__nav
+    display: flex
+    flex-direction: column
+    row-gap: 15px
+    padding: 0
+
+.sidebar-right__nav > li a.active-point, .header-bottom__nav > li a.active-point
+    background-color: $red
+    color: $white
+    font-weight: 600
+
+.sidebar-right__nav > li a, .header-bottom__nav > li a
+    color: yellow
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+
+    height: 60px
+    color: #647A84
+    line-height: normal
+    display: flex
+    align-items: center
+    column-gap: 30px
+    border-radius: 10px
+    white-space: nowrap
+
+.sidebar-right__nav > li a.active-point svg path , .header-bottom__nav > li a.active-point svg path
+    fill: $white
+
+.sidebar-right__nav > li a, .header-bottom__nav > li a
+    &:hover
+        box-shadow: 0px 15px 40px 5px #EDEDED
+
+.sidebar__bottom__phone
+    color: #9795C4
+    font-family: "TT Norms Pro"
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    display: flex
+    flex-direction: column
+    gap: 5px
+
+.sidebar__bottom__phone a
+    color: #FFF
+    font-family: "TT Norms Pro"
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+
+.sidebar__bottom__phone a
+    &:hover
+        text-decoration: underline
+
+.sidebar-right__nav > li a  .icon, .header-bottom__nav > li a  .icon
+    background-color: #E5005B
+    width: 60px
+    height: 60px
+    border-radius: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+
+@media screen and (max-width: 1500px)
+    .sidebar, .sidebar-right
+        display: none
+
+@media screen and (max-width: 768px)
+    .header__nav > li a
+        color: yellow
+        font-size: 16px
+        font-style: normal
+        font-weight: 600
+        padding: 0 10px
+        height: 50px
+        color: #647A84
+        line-height: normal
+        display: flex
+        align-items: center
+        column-gap: 30px
+        border-radius: 10px
+        white-space: nowrap
+    .header__nav
+        gap: 8px
+    
+
+    .header-bottom__nav 
+        gap: 8px
+    .header-bottom__nav > li a
+        height: 50px
+        font-size: 16px
+        gap: 8px
+        .icon
+            width: 50px
+            height: 50px

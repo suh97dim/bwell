@@ -1,0 +1,27 @@
+extends /layout/page
+
+block title
+    title Правила измерения запястными тонометрами_2025
+
+block variables
+    - var page = 'test'
+block content
+    .container
+        .row
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li(aria-current="page").breadcrumb-item Тесты 
+                        li(aria-current="page").breadcrumb-item.active Правила измерения запястными тонометрами_2025
+        .row.wrapper
+            .col-12
+                h2 Правила измерения запястными тонометрами_2025
+                .row.mt-20
+                    .col-12.mt-10.mt-lg-20
+                        .video-wrapper
+                            video( controls type="video/mp4" src="https://ampromoclub.ru/images/tests/205/video.mp4" style="width:100%")
+                .row.mt-20
+                    .col-12.mt-10.mt-lg-20
+                        .test__btn-group
+                            button(type="button" data-bs-toggle="modal" data-bs-target="#test").btn.btn-red Начать
+                            button(type="button" data-bs-toggle="modal" data-bs-target="#traning").btn.btn-grey Попробовать

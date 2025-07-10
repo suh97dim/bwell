@@ -1,0 +1,123 @@
+header
+    position: fixed
+    width: calc(100% - 360px)
+    padding-top: 35px
+    left: 340px
+    top: 0
+    z-index: 10
+
+.header-desc
+    display: flex
+    gap: 20px
+
+.header-mobile
+    display: none
+
+.header-search__form
+    display: flex
+    gap: 20px
+    width: 100%
+    flex: 1
+
+.header-search__input
+    display: flex
+    align-items: center
+    column-gap: 10px
+    padding: 20px 40px 20px 80px
+    border-radius: 10px
+    background-color: #fff
+    box-shadow: 0px 15px 40px 5px #EDEDED
+    flex: 1
+    background-image: url(../img/search.svg)
+    background-position: 40px center
+    background-repeat: no-repeat
+    &:focus
+        outline: 2px solid #524E9C
+
+@media screen and (max-width: 1500px)
+    header
+        width: calc(100% - 20px)
+        padding-top: 10px
+        left: 10px
+    .header-desc
+        display: none
+
+    .header-mobile
+        display: block
+     
+        min-height: 55px
+        display: flex
+        align-items: center
+    .header-mobile__logo
+        max-width: 110px
+        svg
+            width: 100%
+
+    .hamburger-container
+        width: 55px
+        height: 55px
+        background: #7687C3
+        border-radius: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        right: 0
+        z-index: 10
+
+    .bar
+        display: block
+        width: 25px
+        height: 2px
+        margin: 6px auto
+        -webkit-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out
+        background-color: #fff
+
+    .hamburger .bar:nth-child(1)
+        margin: 3px auto
+
+    .hamburger.active .bar:nth-child(2)
+        opacity: 0
+
+    .hamburger.active .bar:nth-child(1)
+        transform: translateY(8px) rotate(45deg)
+
+    .hamburger.active .bar:nth-child(3)
+        transform: translateY(-8px) rotate(-45deg)
+
+    .burger-menu.active
+        transform: translateX(0)
+    .burger-menu
+        position: absolute
+        max-width: 340px
+        width: calc( 100dvw - 60px )
+        height: calc( 100dvh - 40px )
+        overflow-y: scroll
+        top: 20px
+        border-radius: 10px
+        right: 20px
+        padding: 15px 15px 
+        box-sizing: border-box
+        transform: translateX(120%)
+        z-index: 3
+        transition: .3s
+        background-color: #fff
+        display: flex
+        flex-direction: column
+        max-height:  min-content
+
+    .header-backdrop
+        width: 100%
+        height: 100%
+        position: fixed
+        top: 0
+        left: 0
+        background-color: red
+        z-index: 0
+        display: none
+        background-color: rgba(100, 122, 132, 0.50)
+        backdrop-filter: blur(5px)
+
+    .header-backdrop.active
+        display: block

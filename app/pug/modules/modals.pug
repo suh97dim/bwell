@@ -1,0 +1,168 @@
+.modal#test
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-body
+                button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                        <path fill="#524E9C" d="M9.756.232a.783.783 0 0 0-1.112 0l-3.65 3.655L1.344.232a.783.783 0 0 0-1.113 0 .785.785 0 0 0 0 1.113L3.881 5 .232 8.655a.785.785 0 0 0 0 1.113.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232L5 6.113l3.65 3.655a.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232.785.785 0 0 0 0-1.113L6.105 5l3.65-3.655a.785.785 0 0 0 0-1.113Z"/>
+                    </svg>
+                #modal-title.modal-title 
+                .row 
+                    .col 
+                        #quiz-box 
+                            .question-box
+                                #question
+                                #answers
+.modal#traning
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-body
+                button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                        <path fill="#524E9C" d="M9.756.232a.783.783 0 0 0-1.112 0l-3.65 3.655L1.344.232a.783.783 0 0 0-1.113 0 .785.785 0 0 0 0 1.113L3.881 5 .232 8.655a.785.785 0 0 0 0 1.113.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232L5 6.113l3.65 3.655a.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232.785.785 0 0 0 0-1.113L6.105 5l3.65-3.655a.785.785 0 0 0 0-1.113Z"/>
+                    </svg>
+                #modal-title.modal-title 
+                .row 
+                    .col 
+                        h3.text-center Противоэмболический трикотаж B.Well на операцию и роды
+                        p.mt-20
+                            strong Тренировка окончена
+                        p Продолжительность: 
+                            strong(style="color:#524E9C") 92 секунд
+                        p Всего вопросов:
+                            strong(style="color:#524E9C") 17 
+                        p Вы ответили верно на:
+                            strong(style="color:#524E9C") 5
+                        p.mt-20
+                            strong Вопросы, над которыми нужно потренироваться еще:
+                        ol.traning.mt-10 
+                            li Какого класса компрессии противоэмболические чулки B.Well JW-224
+                            li Фармацевты предлагают противоэмболические чулки B.Well, потому то их высокое качество и лечебный эффект гарантированы: (1 вариант ответа)
+                            li 3D вязка противоэмболических чулок B.Well JW-214 и JW-224 обеспечивает (2 варианта):
+                            li В каких ситуациях предложить противоэмболические чулки B.Well JW-214, l класса компрессии 18-22 мм рт. ст.? (1 вариант)
+                    .col-12.mt-20
+                        button.btn.btn-red.mx-a() Продолжить
+.modal#modal-reg
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-body
+                button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                        <path fill="#524E9C" d="M9.756.232a.783.783 0 0 0-1.112 0l-3.65 3.655L1.344.232a.783.783 0 0 0-1.113 0 .785.785 0 0 0 0 1.113L3.881 5 .232 8.655a.785.785 0 0 0 0 1.113.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232L5 6.113l3.65 3.655a.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232.785.785 0 0 0 0-1.113L6.105 5l3.65-3.655a.785.785 0 0 0 0-1.113Z"/>
+                    </svg>
+                h1.text-center  Регистрация
+                h3.text-center.mt-24.mt-lg-40 Личные данные
+                .reg-info Внимание! все поля обязательны для заполнения. 
+                form.row.needs-validation.mt-20(novalidate).reg-form
+                    .col-sm-4.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="text" placeholder="Фамилия" required  id="fam" ).form-control
+                            label(for="fam") Фамилия 
+                            .invalid-feedback Обязательное поле
+                    .col-sm-4.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="text" placeholder="Имя" required  id="name" ).form-control
+                            label(for="name") Имя
+                            .invalid-feedback Обязательное поле
+                    .col-sm-4.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="text" placeholder="Отчество" required  id="patronymic" ).form-control
+                            label(for="patronymic") Отчество
+                            .invalid-feedback Обязательное поле
+                    .col-sm-4.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="text" placeholder="Номер телефона" required  id="phone" ).form-control.mask-phone
+                            label(for="phone") Номер телефона
+                            .invalid-feedback Обязательное поле
+                    .col-sm-4.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="email" placeholder="E-mail" required  id="email" ).form-control
+                            label(for="email") E-mail
+                            .invalid-feedback Обязательное поле
+                    .col-sm-4.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="text" placeholder="ИНН" required  id="inn" ).form-control
+                            label(for="email") ИНН
+                            .invalid-feedback Обязательное поле
+                    .col-sm-6.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="date" placeholder="Дата рождения" required  id="date" ).form-control
+                            label(for="date") Дата рождения
+                            .invalid-feedback Обязательное поле
+                    .col-sm-6
+                        .gender-box
+                            .form-check
+                                input(type="radio" value="Муж" checked name="gender" id="male").form-check-input
+                                label(for="male").form-check-label Мужской
+                            .form-check
+                                input(type="radio" value="Муж" name="gender" id="female").form-check-input
+                                label(for="female").form-check-label Женский
+                    h3.text-center.mt-20.mb-20 Адрес регистрации
+                    .col-sm-6.mb-8.pos-r
+                        .form-floating
+                            input(type="text" placeholder="Название населенного пункта" required  id="city" ).form-control
+                            label(for="city") Город
+                            .invalid-feedback Обязательное поле
+                    .col-sm-6.mb-8.pos-r
+                        .form-floating
+                            input(type="text" placeholder="Улица" required  id="street" ).form-control
+                            label(for="street") Улица
+                            .invalid-feedback Обязательное поле
+                    .col-12.mb-20
+                        .adress-help-text Введите название населенного пункта, подождите 2-3 секунды и выберете его из списка
+                    .col-sm-6.col-md-4.mb-8.mb-md-20.pos-r    
+                        .form-floating
+                            input(type="text" placeholder="№ дома" required  id="number-home" ).form-control
+                            label(for="number-home") Дом
+                            .invalid-feedback Обязательное поле
+                    .col-sm-6.col-md-4.mb-8.mb-md-20.pos-r    
+                        .form-floating
+                            input(type="text" placeholder="№ строения" required  id="number-stroenie" ).form-control
+                            label(for="number-stroenie") Строение
+                            .invalid-feedback Обязательное поле
+                    .col-sm-6.col-md-4.mb-8.mb-md-20.pos-r    
+                        .form-floating
+                            input(type="text" placeholder=" № кв" required  id="number-flat" ).form-control
+                            label(for="number-flat")  Офис
+                            .invalid-feedback Обязательное поле
+                    h3.text-center.mt-20.mb-20 Скан паспорта
+                    .col-12.mb-24
+                        .upload-one
+                            <input id="passport"  class="file" type="file" data-show-preview="false" required data-msg-placeholder="Загрузить файл">
+                    .col-sm-12.mb-8
+                        .form-check
+                            input( type="checkbox" value="" id="consent" ).form-check-input
+                            label(for="consent").form-check-label Я даю <a href="">согласие</a> на обработку моих персональных данных
+                    .col-sm-12.mb-8
+                        .form-check
+                            input( type="checkbox" value="" id="policy" ).form-check-input
+                            label(for="policy").form-check-label Я ознакомлен и согласен с <a href="">политикой конфиденциальности</a>
+                    .col-sm-12.mb-8
+                        .form-check
+                            input( type="checkbox" value="" id="rules" ).form-check-input
+                            label(for="rules").form-check-label Я ознакомлен и согласен с <a href="">правилами акции</a>
+                    .col-sm-12.mb-8
+                        .form-check
+                            input( type="checkbox" value="" id="sms" ).form-check-input
+                            label(for="sms").form-check-label Я согласен получать СМС-сообщения по Акции в срок проведения Акции
+                    .col-12.mt-20
+                        button.btn.btn-red.mx-a(type="submit")  Зарегистрироваться 
+
+.modal#modal-recovery
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-body
+                button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                        <path fill="#524E9C" d="M9.756.232a.783.783 0 0 0-1.112 0l-3.65 3.655L1.344.232a.783.783 0 0 0-1.113 0 .785.785 0 0 0 0 1.113L3.881 5 .232 8.655a.785.785 0 0 0 0 1.113.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232L5 6.113l3.65 3.655a.782.782 0 0 0 .56.232.782.782 0 0 0 .559-.232.785.785 0 0 0 0-1.113L6.105 5l3.65-3.655a.785.785 0 0 0 0-1.113Z"/>
+                    </svg>
+                h1.text-center  Восстановление пароля
+                .reg-info.mt-24.mt-lg-40 Внимание! все поля обязательны для заполнения. 
+                form.row.needs-validation.mt-20(novalidate).reg-form
+                    .col.mb-8.mb-md-20.pos-r
+                        .form-floating
+                            input(type="text" placeholder="Номер телефона" required  id="phone-recovery" ).form-control.mask-phone
+                            label(for="phone-recovery") Номер телефона
+                            .invalid-feedback Обязательное поле
+                    .col-12
+                        button.btn.btn-red.mx-a.w-100(type="submit") Восстановить

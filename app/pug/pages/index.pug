@@ -1,0 +1,106 @@
+extends /layout/page
+
+block title
+    title Главная страница
+
+block variables
+    - var page = 'index'
+block content
+    .container
+        .row
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li(aria-current="page").breadcrumb-item.active FAQ
+        .row.wrapper
+            .col 
+                .row 
+                    .col-12
+                        .profile 
+                            h1 Макавеев Дмитрий 
+                            .profile-phone +7 (999) 999-99-99
+                        .progress-bar
+                            .progress-bar__iside(style="width:70%")
+                .row.mt-40
+                    .profile-achievements
+                        .profile-achievement
+                            .profile-achievements__icon 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40">
+                                    <path fill="#524E9C" d="M34.375 11.914h-10V7.5a1.25 1.25 0 0 0-1.25-1.25H7.187V4.687a.313.313 0 0 0-.312-.312H4.687a.313.313 0 0 0-.312.313v30.625c0 .171.14.312.313.312h2.187c.172 0 .313-.14.313-.313V25h9.687v4.414c0 .691.559 1.25 1.25 1.25h16.25a1.25 1.25 0 0 0 1.25-1.25v-16.25a1.25 1.25 0 0 0-1.25-1.25Z"/>
+                                </svg>
+                            .profile-achievement__text-group 
+                                .profile-achievement__counter 27  
+                                .profile-achievement__desc Пройдено тестов
+                        .profile-achievement
+                            .profile-achievements__icon 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none" viewBox="0 0 38 38">
+                                    <path fill="#524E9C" fill-rule="evenodd" d="M19 1.583C9.38 1.583 1.583 9.381 1.583 19c0 9.619 7.798 17.417 17.417 17.417 9.618 0 17.416-7.798 17.416-17.417 0-9.619-7.798-17.416-17.416-17.416Zm7.549 14.472a1.585 1.585 0 0 0-.73-2.557 1.583 1.583 0 0 0-1.702.53l-6.808 8.169-3.523-3.525a1.584 1.584 0 0 0-2.24 2.24l4.75 4.75a1.584 1.584 0 0 0 2.336-.107l7.917-9.5Z" clip-rule="evenodd"/>
+                                </svg>
+                            .profile-achievement__text-group 
+                                .profile-achievement__counter 200
+                                .profile-achievement__desc Набрано баллов
+
+                .row.mt-30.mt-lg-60
+                    h3 Мои данные
+                    form.row.needs-validation.mt-20(novalidate).lk-form
+                        .col-lg-4
+                            .row 
+                                .col-12.mb-12.d-flex.justify-content-between
+                                    label(for="phone" class="form-label" ) Номер телефона:
+                                    input( placeholder="+7 (999) 999-99-99" type="phone" disabled  id="phone").form-control.mask-phone
+                                .col-12.mb-12.d-flex.justify-content-between
+                                    label(for="fam" class="form-label" ) Фамилия
+                                    input( placeholder="Макавеев" type="text" disabled  id="fam").form-control
+                                .col-12.mb-12.d-flex.justify-content-between
+                                    label(for="name" class="form-label" ) Имя
+                                    input( placeholder="Дмитрий" type="text" disabled  id="name").form-control
+                                .col-12.mb-12.d-flex.justify-content-between
+                                    label(for="patronymic" class="form-label" ) Отчество
+                                    input( placeholder="Дмитриевич" type="text" disabled  id="patronymic").form-control
+                        .col-lg-4
+                            .row 
+                                .col-12.mb-12.d-flex.justify-content-between
+                                    label(for="date" class="form-label" ) Дата рождения:
+                                    input( placeholder="12.11.2025" type="date" disabled  id="date").form-control
+                                .col-12.mb-12.d-flex.justify-content-between
+                                    label(for="mail" class="form-label" ) Пол:
+                                    .gender-box
+                                        .form-check
+                                            input(type="radio" value="Муж" checked name="gender" disabled id="male").form-check-input
+                                            label(for="male").form-check-label Мужской
+                                        .form-check
+                                            input(type="radio" value="Муж" name="gender" disabled id="female").form-check-input
+                                            label(for="female").form-check-label Женский
+                                .col-12.mb-12.d-flex.justify-content-between
+                                    label(for="email" class="form-label" ) Еmail:
+                                    input( placeholder="info@i-actions.ru" type="email" disabled  id="email").form-control
+                        .col-lg-4
+                            .row 
+                                .col-12.mb-12.d-flex.justify-content-between
+                                             .form-check
+                                                input( type="checkbox" disabled checked value="" id="sms" ).form-check-input
+                                                label(for="sms").form-check-label Согласен получать сообщения о планируемых мероприятиях и акциях на свой e-mail
+                .row.mt-30.mt-lg-60
+                    .col-12.d-flex.justify-content-between
+                        h3 Пройденные тесты
+                        #see-more-test Смотреть все 
+                    .col-sm-6.col-md-4.mt-10.mt-sm-20.lk-test
+                        a(href="" target="_blank" style="background-image: url(../img/bg/test.jpg)").test-item 
+                            .test-item__mask
+                            .test-item__title Правила измерения запястными тонометрами_2025 
+                    .col-sm-6.col-md-4.mt-10.mt-sm-20.lk-test
+                        a(href="" target="_blank" style="background-image: url(../img/bg/test.jpg)").test-item 
+                            .test-item__mask
+                            .test-item__title Правила измерения запястными тонометрами_2025
+                    .col-sm-6.col-md-4.mt-10.mt-sm-20.lk-test
+                        a(href="" target="_blank" style="background-image: url(../img/bg/test.jpg)").test-item 
+                            .test-item__mask
+                            .test-item__title Правила измерения запястными тонометрами_2025
+                    .col-sm-6.col-md-4.mt-10.mt-sm-20.lk-test(style="display: none")
+                        a(href="" target="_blank" style="background-image: url(../img/bg/test.jpg)").test-item 
+                            .test-item__mask
+                            .test-item__title Правила измерения запястными тонометрами_2025
+                    .col-sm-6.col-md-4.mt-10.mt-sm-20.lk-test(style="display: none")
+                        a(href="" target="_blank" style="background-image: url(../img/bg/test.jpg)").test-item 
+                            .test-item__mask
+                            .test-item__title Правила измерения запястными тонометрами_2025

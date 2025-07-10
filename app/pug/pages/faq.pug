@@ -1,0 +1,39 @@
+extends /layout/page
+
+block title
+    title FAQ
+
+block variables
+    - var page = 'faq'
+block content
+    .container
+        .row
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li(aria-current="page").breadcrumb-item.active FAQ
+        .row.wrapper
+            .col-12
+                h2 FAQ
+                .row.mt-30
+                    .col-12
+                        .qa-wrapper
+                            .qa-item.default-active.active
+                                .qa-title Тема вопроса 1
+                                .qa-details Стать участником акции может любой гражданин РФ не моложе 18 лет, зарегистрировавшийся на сайте <a href="" target="_blank">www.ampromoclub.ru</a>, предоставивший свои подлинные персональные данные (фамилию, имя, отчество, возраст, номер мобильного телефона, адрес электронной почты) и зарегистрировавший код в Личном кабинете.
+                                    
+                            .qa-item
+                                .qa-title Какой продукт необходимо купить, чтобы принять участие? 
+                                .qa-details 1
+                            .qa-item
+                                .qa-title До какого числа выдают призы 
+                                .qa-details 2
+                            .qa-item
+                                .qa-title В какие сроки проводится Акция?
+                                .qa-details 3
+                            .qa-item
+                                .qa-title Как я узнаю что стал участником акции?
+                                .qa-details 4
+                            .qa-item
+                                .qa-title Какие призы я могу получить за участие в акции?
+                                .qa-details 5

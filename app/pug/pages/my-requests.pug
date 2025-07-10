@@ -1,0 +1,35 @@
+extends /layout/page
+
+block title
+    title Мои запросы
+
+block variables
+    - var page = 'my-requests'
+block content
+    .container
+        .row
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li(aria-current="page").breadcrumb-item.active Мои запросы
+        .row.wrapper
+            .col-12
+                h2 Мои запросы
+                .row.mt-30
+                    .col-12 
+                        form(action="" method="get").my-requests-question__form
+                            input( placeholder="Задать вопрос"  autocomplete="off").my-requests-question__input
+                            button(type="submit").btn.btn-red Отправить
+                .row.mt-30
+                    .col-12
+                        .qa-wrapper
+                            .qa-item.default-active.active
+                                .qa-title Тема вопроса от пользователя
+                                .qa-details Ответ на вопрос пользователя
+                            .qa-item
+                                .qa-title Тема вопроса от пользователя
+                                .qa-details Ответ на вопрос пользователя
+                            .qa-item
+                                .qa-title Тема вопроса от пользователя
+                                .qa-details Ответ на вопрос пользователя
+                            

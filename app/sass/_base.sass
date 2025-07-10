@@ -1,0 +1,775 @@
+::-webkit-scrollbar
+	width: 0
+
+body
+	font-family: "TT Norms Pro"
+	text-rendering: optimizeLegibility !important
+	-webkit-font-smoothing: antialiased !important
+	-moz-osx-font-smoothing: grayscale !important
+*
+	padding: 0px
+	margin: 0px
+	border: none
+
+*,
+*::before,
+*::after
+	box-sizing: border-box
+
+a
+	text-decoration: none
+
+a:hover
+	text-decoration: none
+
+aside,
+nav,
+footer,
+header,
+section,
+main
+	// display: block
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+	font-size: inherit
+	font-weight: inherit
+	margin: 0
+
+ul, ul li
+	list-style: none
+	margin: 0
+
+img
+	vertical-align: top
+
+img,
+svg
+	max-width: 100%
+	height: auto
+
+.content
+	margin-left: 340px
+	margin-right: 340px
+	padding-top: 140px
+
+	position: relative
+
+// .wrapper
+// 	margin-right: 340px
+// 	background-color: #00000031
+
+.container
+	max-width: 100%
+
+h1
+	color: #524E9C
+	font-size: 32px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+
+h2
+	color: #524E9C
+
+	font-size: 25px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+
+h3
+	color: #524E9C
+	font-size: 20px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+h5
+	color: #647A84
+	font-size: 16px
+	font-style: normal
+	font-weight: 700
+	line-height: 16px
+	text-transform: capitalize
+
+.login__left-side, .login__right-side
+	width: 100%
+	height: 100dvh
+	display: flex
+	justify-content: center
+	align-items: center
+
+.login__left-side
+	background-image: url(../img/bg/login-bg.jpg)
+	background-size: cover
+	background-position: center center
+
+.login__right-side
+	position: relative
+	.logo
+		position: absolute
+		top: 30px
+		left: 30px
+
+.become-a-member
+	width: 300px
+	height: 180px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	gap: 5px
+	color: #FFF
+	text-align: center
+	font-size: 22px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	position: relative
+	cursor: pointer
+
+.become-a-member
+	&:hover
+		color: #fff
+		transition-duration: 1s
+		&:after
+			left: 10px
+			top: 10px
+			transition-duration: 0.3s
+		&:before
+			right: 10px
+			bottom: 10px
+			transition-duration: 0.3s
+
+.become-a-member
+	&:after
+		content: ''
+		background-image: url(../img/bg/become-1.svg)
+		width: 40px
+		height: 40px
+		position: absolute
+		left: 0
+		top: 0
+		transition-duration: 0.3s
+		background-size: contain
+		background-repeat: no-repeat
+	&:before
+		content: ''
+		background-image: url(../img/bg/become-2.svg)
+		width: 40px
+		height: 40px
+		position: absolute
+		right: 0
+		bottom: 0
+		transition-duration: 0.3s
+		background-size: contain
+		background-repeat: no-repeat
+
+.login-form
+	max-width: 430px
+	width: 100%
+	.title
+		color: #524E9C
+		font-size: 30px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+	.subtitle
+		color: #524E9C
+		font-size: 18px
+		font-style: normal
+		font-weight: 400
+		line-height: 28px
+
+.breadcrumb
+	margin: 0
+	margin-left: 40px
+
+.breadcrumb-item
+	color: #C4C4C4
+	font-size: 20px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+
+.breadcrumb-item.active
+	color: #C4C4C4
+
+.breadcrumb-item+.breadcrumb-item::before
+	content: ">"
+	color: #C4C4C4
+
+.wrapper
+	box-shadow: 0px 15px 40px 5px #EDEDED
+	padding: 40px
+	border-radius: 10px
+	margin-top: 40px
+	margin-bottom: 40px
+	display: flex
+	flex-direction: column
+
+.test-item
+	border-radius: 10px
+	aspect-ratio: 1
+	width: 100%
+	// padding: 100%
+	display: flex
+	position: relative
+	border-radius: 10px
+
+	overflow: hidden
+	background-size: contain
+
+.test-item__mask
+	background: linear-gradient(180deg, rgba(100, 122, 132, 0.60) 15%, rgba(100, 122, 132, 0.00) 50%, rgba(100, 122, 132, 0.60) 85%)
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+
+.test-item__title
+	width: calc( 100% - 40px )
+	position: absolute
+	bottom: 20px
+	left: 20px
+	border-radius: 10px
+	background: rgba(100, 122, 132, 0.50)
+	backdrop-filter: blur(5px)
+	padding: 14px 20px
+	font-family: "TT Norms Pro"
+	font-size: 16px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	color: #fff
+
+.welcome-item
+	padding: 20px 24px
+	background-color: #FBF9F9
+	border-radius: 10px
+	color: #000
+	height: 100%
+	font-size: 18px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	display: flex
+	-moz-transition: all .1s ease-in
+	-o-transition: all .1s ease-in
+	-webkit-transition: all .1s ease-in
+
+.welcome-item
+	&:hover
+		background-color: #524E9C
+		color: #fff
+
+.scorm-item
+	padding: 20px 24px
+	background-color: #FBF9F9
+	border-radius: 10px
+	display: flex
+	-moz-transition: all .1s ease-in
+	-o-transition: all .1s ease-in
+	-webkit-transition: all .1s ease-in
+	display: flex
+	flex-direction: column
+	background-size: 120px
+	background-position: right 20px bottom 20px
+	background-repeat: no-repeat
+
+.scorm-item__title
+	color: #647A84
+	font-size: 20px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+.scorm-item__table
+	margin-top: 36px
+	color: #647A84
+	font-size: 17px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	max-width: 300px
+	th
+		padding-right: 18px
+		font-weight: 400
+	th, td
+		padding-top: 8px
+
+.not-scroll
+	overflow: hidden
+
+.qa-wrapper
+	display: flex
+	gap: 20px
+	flex-direction: column
+	width: 100%
+
+.qa-item
+	padding: 20px 24px
+	background-color: #FBF9F9
+	width: 100%
+	border-radius: 10px
+	.qa-title
+		background-image: url(../img/icons/qa-open.svg)
+		background-repeat: no-repeat
+		background-position-x: left
+		background-position-y: 10px
+		cursor: pointer
+		padding-left: 50px
+		font-weight: 600
+		font-size: 20px
+		line-height: 120%
+		color: #524E9C
+	.qa-details
+		display: none
+	.qa-details,a
+		margin-top: 16px
+		line-height: 120%
+		font-weight: 400
+		color: #000000
+		font-size: 18px
+	a
+		text-decoration: underline
+	a
+		&:hover
+			text-decoration: none
+
+.qa-item:first-child
+	border: none
+.qa-item.default-active
+	.qa-details
+		display: block
+.qa-item.active
+	.qa-title
+		font-weight: 700
+		background-image: url(../img/icons/qa-close.svg)
+
+.video-wrapper
+	border: 2px solid #647A84
+	border-radius: 10px
+	overflow: hidden
+	height: max-content
+	display: flex
+
+.test__btn-group
+	display: flex
+	gap: 20px
+
+.question-box
+	margin-top: 36px
+	display: flex
+	flex-direction: column
+	gap: 36px
+
+#question
+	color: #647A84
+	font-size: 16px
+	font-style: normal
+	font-weight: 400
+	line-height: 24px
+	text-align: center
+.answer
+	display: flex
+	margin: 10px 0
+	padding: 24px 20px
+	background: #FBF9F9
+	border: 1px solid #524E9C
+	border-radius: 10px
+	cursor: pointer
+	transition: 0.3s
+	width: 100%
+	color: #647A84
+	font-size: 16px
+	font-style: normal
+	font-weight: 400
+.answer.correct
+	background: #E1EEB5
+	border: 1px solid #9AC508
+.answer.wrong
+	background: #FABBBD
+	border: 1px solid #E5005B
+.answer:disabled
+	cursor: default
+
+.quiz-result
+	color: #647A84
+	display: block
+	font-size: 18px
+	font-style: normal
+	font-weight: 400
+	text-align: center
+	margin-top: 20px
+
+.quiz-result-red
+	color: #E5005B
+	text-align: center
+	font-size: 20px
+	font-style: normal
+	font-weight: 700
+	display: block
+	margin-top: 20px
+
+.test-result__img
+	max-width: 184px
+	margin: 0 auto
+	margin-top: 20px
+	display: block
+
+.table-wrapper
+	background-color: #FBF9F9
+	border-radius: 10px
+	padding: 20px 40px
+
+#my-test, #my-payments
+	width: 100%
+	a
+		color: #524E9C
+		text-decoration: underline
+		&:hover
+			color: #524E9C
+			text-decoration: none
+
+	thead
+
+		border-bottom: 2px solid #487BFE
+	th
+		padding: 15px 0 15px 0
+		font-size: 15px
+		font-weight: 700
+		color: #524E9C
+	td
+		padding: 15px 0 5px 0
+		font-size: 15px
+		font-weight: 400
+		color: #524E9C
+a.page-link
+	display: flex
+	width: 48px
+	height: 48px
+	justify-content: center
+	align-items: center
+	border-radius: 10px!important
+	background: transparent !important
+	color: #524E9C!important
+	border: none
+	font-size: 16px
+	&:hover
+		color: #524E9C!important
+		border: 1px solid #524E9C
+
+.page-item.active .page-link
+	color: #524E9C!important
+	background: transparent !important
+	border: 2px solid #524E9C
+	font-weight: 700
+
+.page-item.previous .page-link,  .page-item.next .page-link
+	background-color: #7687C3 !important
+	width: 40px
+	height: 40px
+
+.page-item.previous.disabled .page-link,  .page-item.next.disabled .page-link
+	opacity: 0.5
+ul.pagination
+	display: flex
+	gap: 14px
+	align-items: center
+	margin-top: 31px
+
+.dataTables_filter
+	display: none
+
+.status
+	background-repeat: no-repeat
+	padding-left: 24px
+	background-position: center left
+.status_wait
+	background-image: url(../img/icons/wait.svg)
+	color: #647A84
+.status_success
+	color: #9AC508
+	background-image: url(../img/icons/success.svg)
+
+.my-requests-question__form
+	display: flex
+	gap: 20px
+	width: 100%
+	flex: 1
+
+.my-requests-question__input
+	display: flex
+	align-items: center
+	column-gap: 10px
+	padding: 20px 40px 20px 40px
+	border-radius: 10px
+	background-color: #fff
+	box-shadow: 0px 15px 40px 5px #EDEDED
+	flex: 1
+	&:focus
+		outline: 2px solid #524E9C
+
+.recovery-link
+	color: #524E9C
+	font-size: 20px
+	font-weight: 700
+	display: block
+	cursor: pointer
+	&:hover
+		color: #524E9C
+		opacity: 0.8
+
+.reg-info
+	color: #E5005B
+	font-size: 14px
+	font-style: normal
+	font-weight: 400
+	line-height: 120%
+	margin-top: 20px
+.adress-help-text
+	color: #647A84
+	text-align: center
+	font-size: 12px
+	font-style: normal
+	font-weight: 400
+p
+	color: #647A84
+	font-size: 16px
+
+ol.traning
+	li
+		color: #647A84
+		font-size: 12px
+		margin-bottom: 6px
+
+.header-mobile__proile
+	display: flex
+	flex-direction: column
+	gap: 0px
+	.name
+		color: #524E9C
+		font-size: 20px
+		font-weight: 700
+	.phone
+		color: #647A84
+		font-size: 16px
+		font-weight: 400
+@media screen and (max-width: 1800px)
+	.scorm-item
+		background-size: 80px
+
+@media screen and (max-width: 1500px)
+	.wrapper
+		padding: 24px
+	.content
+		margin: 0 auto
+		padding-top: 80px
+		width: calc( 100% - 40px )
+	.test
+		margin-top: 20px
+	.breadcrumb
+		margin-left: 24px
+	.container
+		// --bs-gutter-x: 0
+
+@media screen and (max-width: 1200px)
+	.welcome-item
+		font-size: 16px
+		padding: 16px 20px
+	.wrapper
+		padding: 16px 12px
+	h2
+		font-size: 20px
+	.test-item__title
+		font-size: 14px
+		width: calc(100% - 20px)
+		left: 10px
+		bottom: 10px
+		padding: 12px 14px
+	.breadcrumb
+		margin-left: 12px
+
+@media screen and (max-width: 1100px)
+	.login__left-side
+		height: auto
+		padding: 80px
+
+	.login__right-side .logo
+		margin: 0 auto
+		left: 0
+		display: block
+		width: 100px
+		right: 0
+	.login__right-side
+		height: auto
+		padding: 80px 0 40px 0
+
+	.become-a-member
+		font-size: 20px
+		width: 280px
+		height: 160px
+		&:after
+			width: 30px
+			height: 30px
+		&:before
+			width: 30px
+			height: 30px
+	.login-form
+		padding: 0 16px
+		.title
+			text-align: center
+		.subtitle
+			text-align: center
+
+@media screen and (max-width: 768px)
+	.wrapper
+		padding: 0
+		box-shadow: none
+	.breadcrumb
+		margin: 0
+		margin-left: 0
+	.content
+		// width: calc( 100% - 20px )
+		width: 100%
+
+	.breadcrumb-item
+		font-size: 14px
+
+	h2
+		font-size: 22px
+
+	.table-wrapper
+		padding: 0 20px 20px 20px
+		overflow: scroll
+
+	#my-test, #my-payments
+		width: 100%
+		min-width: 800px
+
+		thead
+
+			border-bottom: 2px solid #487BFE
+		th
+			padding: 15px 0 15px 0
+			font-size: 15px
+			font-weight: 700
+			color: #524E9C
+		td
+			padding: 15px 0 5px 0
+			font-size: 15px
+			font-weight: 400
+			color: #524E9C
+
+	a.page-link
+		width: 40px
+		height: 40px
+		font-size: 14px
+	.page-item.previous .page-link,  .page-item.next .page-link
+		background-color: #7687C3 !important
+		width: 32px
+		height: 32px
+
+	.page-item.previous.disabled .page-link,  .page-item.next.disabled .page-link
+		opacity: 0.5
+	ul.pagination
+		display: flex
+		gap: 10px
+		align-items: center
+		margin-top: 24px
+
+	.become-a-member
+		font-size: 18px
+		width: 260px
+		height: 120px
+		&:after
+			width: 24px
+			height: 24px
+		&:before
+			width: 24px
+			height: 24px
+
+	.login__left-side
+		padding: 50px
+
+	.login__right-side
+		padding: 64px 0 40px 0
+		.logo
+			margin: 0 auto
+			left: 0
+			display: block
+			width: 100px
+			right: 0
+			top: 20px
+	.login-form
+		padding: 0 16px
+		.title
+			font-size: 24px
+		.subtitle
+			text-align: center
+			font-size: 16px
+
+	.recovery-link
+		font-size: 16px
+
+	.qa-wrapper
+		display: flex
+		gap: 8px
+		flex-direction: column
+		width: 100%
+
+	.qa-item
+		padding: 14px 18px
+		background-color: #FBF9F9
+		width: 100%
+		border-radius: 10px
+		.qa-title
+			padding-left: 30px
+			font-size: 17px
+		.qa-details
+			display: none
+		.qa-details,a
+			margin-top: 16px
+			line-height: 120%
+			font-weight: 400
+			color: #000000
+			font-size: 16px
+		a
+			text-decoration: underline
+		a
+			&:hover
+				text-decoration: none
+
+	.my-requests-question__form
+		display: flex
+		gap: 8px
+		width: 100%
+		flex-direction: column
+		flex: 1
+		.btn
+			width: 100%
+
+	.my-requests-question__input
+		padding: 15px 20px
+
+	.question-box
+		margin-top: 16px
+		gap: 16px
+	.answer
+		padding: 14px 16px
+		margin: 8px 0
+
+	.scorm-item
+		background-size: 70px
+		.scorm-item__title
+			font-size: 18px
+	.scorm-item__table
+		font-size: 16px
+
+	h1
+		font-size: 28px
